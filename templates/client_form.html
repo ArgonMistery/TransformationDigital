@@ -1,0 +1,33 @@
+{% extends './layout.html' %}
+
+
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+
+{% block css %}
+
+{% endblock %}
+
+
+
+{% block bokeh_script %}
+
+{% endblock %}
+
+
+
+{% block body %}
+    {% from './macro.html' import render_field %}
+    
+    <label for="username" class="form-label">Password</label>
+    {{render_field(form.username,class="form-control")}}
+
+    <label for="selecion" class="form-label">Address</label>
+    {{render_field(form.selection,class="form-control")}}
+
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends './layout.html' %}
+
+
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+
+{% block css %}
+
+{% endblock %}
+
+
+
+{% block bokeh_script %}
+
+{% endblock %}
+
+
+
+{% block body %}
+    {% from './macro.html' import render_field %}
+    
+    <label for="username" class="form-label">Username</label>
+    {{render_field(form.username,class="form-control")}}
+    
+    <label for="lastname" class="form-label">lastname</label>
+    {{render_field(form.lastname,class="form-control")}}
+
+    <label for="country" class="form-label">Country</label>
+    {{render_field(form.country,class="form-control")}}
+
+{% endblock %}
