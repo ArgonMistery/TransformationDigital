@@ -101,7 +101,7 @@ class QuestionaryForm(Builder):
 
     def Company_name(self):
         (self._product
-         .add_text_field("COMPANY_NAME"))       
+         .add_text_field("TYPE"))       
 
 class Director:
 

@@ -11,7 +11,7 @@ class Abstract_Repository(ABC):
     def get(self,model_type:object):
         raise NotImplementedError
 
-class RepositoryOne(Abstract_Repository):
+class RepositoryForms(Abstract_Repository):
 
     def __init__(self,session)->None:
         self.session=session

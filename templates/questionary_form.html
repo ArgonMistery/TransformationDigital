@@ -18,7 +18,7 @@
           <h1 class="h3 mb-3 fw-normal">QUESTIONARIO DE MADUREZ DIGITAL</h1>
           
           <label for="email" class="form-label">Nombre de la compania</label>
-          {{render_field(form.COMPANY_NAME,class="form-control")}}
+          {{render_field(form.TYPE,class="form-control")}}
           
           <label for="numerical" class="form-label">¿Tiene definido el objetivo de la empresa?</label>
           {{render_field(form.QUESTION_A,class="form-control",placeholder="Responda del 1 al 10")}}
@@ -83,6 +83,7 @@
           <label for="numerical" class="form-label">¿Tiene servicios de atención al cliente?</label>
           {{render_field(form.QUESTION_V,class="form-control",placeholder="Responda del 1 al 100")}}
 
+          
 
           <button class="btn btn-primary w-100 py-2" type="submit">Send</button>
           
